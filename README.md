@@ -1,10 +1,18 @@
 # Unofficial Roam API
 
-This is not official.
+## Forward
+
+This is not an official API.
+Roam is still currently developing their API so this may break do to changes.
+As I am actively using this API I will keep it as up to date as possible.
+
+For the most current implementations always refer to Roams [Documentation](https://developer.ro.am/docs/intro).
+
+## Description
 
 This is a simple class based implementation for interacting with Roam in a bot like fashion via Python.
-
-It includes convenient wrappers for the end-points shared on their [docs page](https://developer.ro.am/docs/intro).
+It provides a single instance so sending multiple messages can be as simple as providing the string.
+If you wish to use Roam to notify you of breaks or successes in your service there is also a decorator to format messages around function calls.
 
 ## Installation:
 
@@ -21,6 +29,19 @@ pip install git+ssh://git@github.com/Zethtren/RoamUnofficial.git
 ```
 
 ## Usage:
+
+The samples below show the key defined in code.
+As always this is considered bad practice.
+I only did this here to simplify the explanation.
+I would strongly encourage using whatever "secrets" tool your cloud provider uses.
+Or at least moving it to a .env file if you do not deploy on the cloud.
+
+This warning applies to "token" and "channels" but definitely "token" in the below examples.
+
+Secrets:
+[AWS](https://docs.aws.amazon.com/secretsmanager/)
+[Google](https://cloud.google.com/secret-manager)
+[Azure](https://learn.microsoft.com/en-us/azure/key-vault/)
 
 ```python
 from roam_unofficial import Roam
