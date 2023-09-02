@@ -3,7 +3,7 @@ authors = [{ name = "Houston Bova", email = "houston.bova@gmail.com" }]
 
 dynamic = ["version"]
 readme = "README.md"
-license = "LICENSE.txt"
+license = {file = "LICENSE"}
 name = "roam-unofficial"
 requires-python = ">=3.10"
 
